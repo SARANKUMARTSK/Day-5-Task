@@ -7,7 +7,29 @@
 </head>
 <body>
     <script>
+          class Circle {
+            constructor(radius,color){
+                this.radius=radius;
+                this.color=color;
+            }
+            getDetails(){
+                 return(`The Radius Of The Circle is : ${this.radius} and it's Color  is : ${this.color}`)
+            }
+            getArea(){
+                let area=((3.14)*Math.sqrt(this.radius))
+                return area;
+            }
+            getCircumference(){
+                let circumference=(2*(3.14)*(this.radius))
+                return circumference;
+            }
+        }
+        const circle1 = new Circle(1,"Red")
+        
 
+        console.log(circle1.getDetails());
+        console.log(circle1.getArea());
+        console.log(circle1.getCircumference());
         
 
         
