@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+/* a) Write a constructor for the class Movie, which takes a String representing the title of the movie, 
+ a String representing the studio, and a String representing the rating as its arguments, 
+and sets the respective class properties to these values.*/
+        class Movies {
+         constructor (title,studio,rating) {
+             this.title=title;
+             this.studio=studio;
+             this.rating=rating;
+         }
+       }
+       const Review1 = new Movies("singam","GreenBanner",4.7);
+       const Review2 = new Movies("siruthai","StudioGreen",4.6);
+     
+       console.log(Review1);
+       console.log(Review2);
+     </script> 
+
+    <script>
+// b) The constructor for the class Movie will set the class property rating to "PG" as default when no rating is provided.
+class Movie {
+    constructor (title,studio,rating) {
+        this.title=title;
+        this.studio=studio;
+        this.rating=rating;
+        if(rating==null){
+            return this.rating="PG"
+        }else{
+            return this.rating=rating
+        }
+    }
+  }
+  const Review3 = new Movie("singam","GreenBanner",4.7);
+  const Review4 = new Movie("siruthai","StudioGreen");
+
+  console.log(Review3);
+  console.log(Review4);
+
+    </script>
+
+    <script>
+/*c) Write a method getPG, which takes an array of base type Movie as its argument, and returns a new array of only those 
+movies in the input array with a rating of "PG". You may assume the input array is full of Movie instances. 
+The returned array need not be full.*/
+class MOVIES {
+    constructor(title, studio, rating) {
+        this.title = title;
+        this.studio = studio;
+        this.rating = rating;
+    }
+}
+
+const movieArray = [];
+
+MOVIES.getResult = function () {
+    const Res = movieArray.filter(movie => movie.rating === "PG");
+    return Res;
+}
+
+const input1 = new MOVIES("Casino Royale", "Eon Productions", "PG-­13");
+const input2 = new MOVIES("Chandramugi", "Sivaji Productions", "PG");
+const input3 = new MOVIES("Virumandi","Raj Kamal Films","PG")
+movieArray.push(input1, input2,input3);
+
+console.log(MOVIES.getResult());
+
+    </script>
+
+   <script>
+/*d) Write a piece of code that creates an instance of the class Movie with the title “Casino Royale”, 
+the studio “Eon Productions”, and the rating “PG­13”*/
+class MOVIE {
+         constructor (title,studio,rating) {
+             this.title=title;
+             this.studio=studio;
+             this.rating=rating;
+         }
+       }
+       const Expected = new MOVIE("Casino Royale","Eon Productions","PG­13");
+      
+       console.log(Expected);
+
+
+  </script>
+
+</body>
+</html>
+
+
+

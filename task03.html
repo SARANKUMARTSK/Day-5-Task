@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 3.Write a “person” class to hold all the details. -->
+
+    <script>
+        class Person {
+            constructor(Name,Age,Qualification,School){
+                this.Name=Name;
+                this.Age=Age;
+                this.Qualification=Qualification;
+                this.School=School;
+            }
+            getDetails(){
+                 return(`The Person Name is : ${Person.Name} His Age is : ${Person.Age} and His Qualification is : ${Person.Qualification} and He Studied in ${Person.School}`)
+            }
+        }
+        const Person1 = new Person("SARAN",25,"B.Sc.,","STC")
+        const Person2 = new Person("KUMAR",26,"Full Stack","Guvi")
+
+        console.log(Person1.getDetails());
+        console.log(Person2.getDetails());
+
+    </script>
+</body>
+</html>

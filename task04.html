@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <!-- 4.write a class to calculate the uber price. -->
+
+ <script>
+       class Uber {
+            constructor(Distance,Rate,Waitingtime){
+                this.Distance=Distance;
+                this.Rate=Rate;
+                this.Waitingtime=Waitingtime;
+            }
+            getDetails(){
+                 return(`The Distance Of The Ride is : ${uber.Distance} Km with the Rate Of  ${uber.Rate}/- Rs With The Waiting Period : ${uber.Waitingtime} Min `)
+            }
+            getPrice(){
+                let Price = (((this.Distance)*(this.Rate))+15*(this.Waitingtime))
+                return Price;
+            }
+        }
+             const uber = new Uber(100,15,30)
+
+        console.log(uber.getDetails());
+        console.log(uber.getPrice());
+
+
+ </script>
+</body>
+</html>
+
+
+
