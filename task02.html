@@ -23,13 +23,17 @@
                 let circumference=(2*(3.14)*(this.radius))
                 return circumference;
             }
+            setDetails(newRadius){
+                this.radius=5;
+            }
         }
         const circle1 = new Circle(1,"Red")
         
-
         console.log(circle1.getDetails());
         console.log(circle1.getArea());
         console.log(circle1.getCircumference());
+        circle1.setDetails(5);
+        console.log(circle1.getDetails());
         
 
         
